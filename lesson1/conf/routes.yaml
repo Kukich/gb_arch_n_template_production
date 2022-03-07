@@ -1,0 +1,6 @@
+- path: '^/index/?$'
+  template: index.html
+  controller: index
+- path: '^/about/?$'
+  template: about.html
+  controller: about
