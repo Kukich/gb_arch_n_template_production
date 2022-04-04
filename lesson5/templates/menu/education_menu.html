@@ -1,0 +1,5 @@
+<ul>
+{% for e in data.menu_educations %}
+    <li><a href="/education/{{ e.language}}/{{e.level}}">{{e.name}}</a></li>
+{% endfor %}
+</ul>

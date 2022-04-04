@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Список курсов{% endblock %}
+{% block menu %}
+{% include 'menu/main_menu.html' %}
+<br>
+{% include 'menu/education_menu.html' %}
+{% endblock %}
+{% block content %}
+{{data.education.text}}
+{% endblock %}

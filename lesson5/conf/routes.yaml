@@ -1,0 +1,12 @@
+- path: '^/index/?$'
+  template: index.html
+  controller: index
+- path: '^/about/?$'
+  template: about.html
+  controller: about
+- path: '^/educations/?$'
+  template: education.html
+  controller: education
+- path: '^/education/(?P<lang>python|javascript|java)/(?P<level>senior|middle|junior)/?$'
+  template: education_page.html
+  controller: education_page
