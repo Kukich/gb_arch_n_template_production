@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ data.name }}</title>
+</head>
+<body>
+<ul>
+    <li><a href="/index">index</a></li>
+    <li><a href="/about">about</a></li>
+    <li><a href="/contacts">contacts</a></li>
+</ul>
+<form method = 'POST' action="/contacts/">
+    <br>Почта<br>
+    <input type = 'text' name='email' value = '{{data.email}}'>
+    <br>Сообщение<br>
+    <textarea rows="10" cols="45" name = 'message'>{{data.message}}</textarea>
+    <br>Гражданство<br>
+    <input type = 'radio' name = 'Гражданство' value="РФ" {{data.rf_on}}> РФ
+    <input type = 'radio' name = 'Гражданство' value="НЕ РФ" {{data.ne_rf_on}}> НЕ РФ
+    <input type = 'submit' >
+</form>
+</body>
+</html>
