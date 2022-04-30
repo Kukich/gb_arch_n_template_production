@@ -2,7 +2,7 @@ import sys
 import os
 import yaml
 import re
-sys.path.append(os.path.join(os.getcwd(), '..'))
+sys.path.append(os.path.join(os.getcwd(), '../..'))
 from model.utils import get_conf
 import page_controller
 
