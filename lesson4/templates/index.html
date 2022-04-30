@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ data.name }}{% endblock %}
+{% block menu %} {% include 'menu/main_menu.html' %}{% endblock %}
+{% block content %}
+this is {{ data.name }},number of page is {{data.number_page}}
+{% if data.number_page|int != 0 %}
+   This is not default index page
+{% endif %}
+{% endblock %}
